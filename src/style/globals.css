@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply bg-base-100 h-full p-6 laptop:p-8;
+}
+
+main,
+footer {
+  @apply w-full laptop:w-2/3 m-auto;
+}
+
+:root {
+  /* containers */
+  --color-base-100: #ffffff;
+  --color-base-200: #fafafa;
+  --color-base-300: #f2f2f2;
+  --color-base-hover: #fbfbfb;
+  --color-base-backdrop: #fbfbfbdd;
+  --color-input: #f2f2f2;
+
+  /* shadows */
+  --color-shadow: #fafafa;
+
+  /* text */
+  --color-content-100: #000;
+  --color-content-200: #8e8e8e;
+
+  /* borders and dividers */
+  --color-line-100: #ececec;
+  --color-line-200: #d2d2d2;
+  --color-line-300: #f6f6f6;
+
+  /* link */
+  --color-link: hsl(172, 66%, 45%);
+
+  /* error */
+  --color-error: #d42d8e;
+}
+
+:root[data-theme="dark"] {
+  /* containers */
+  --color-base-100: #18181b;
+  --color-base-200: #1b1b1b;
+  --color-base-300: #000;
+  --color-base-hover: #212125;
+  --color-base-backdrop: #212125dd;
+  --color-input: #393939;
+
+  /* shadows */
+  --color-shadow: #bfbfbf;
+
+  /* text */
+  --color-content-100: #fff;
+  --color-content-200: #aeaeae;
+
+  /* borders and dividers */
+  --color-line-100: #6b6b6b;
+  --color-line-200: #4b4b4b;
+  --color-line-300: #262626;
+
+  /* link */
+  --color-link: #2dd4bf;
+
+  /* error */
+  --color-error: #d42d8e;
+}
+
+.link {
+  @apply relative text-content-200;
+}
+
+.link::before {
+  background: rgb(45, 212, 191);
+  background: linear-gradient(90deg, rgba(45, 212, 191, 0) 10%, theme(colors.link) 50%, rgba(45, 212, 191, 0) 100%);
+  @apply content-[''] absolute -bottom-3 left-0 w-full h-[2px] scale-x-0 origin-center transition-[transform] duration-150 ease-in-out;
+}
+
+.link-current {
+  @apply text-link font-semibold;
+}
+
+.link-current-mobile {
+  @apply bg-base-300 py-1 px-4 rounded-md font-semibold text-primary;
+}
+
+.link:hover.link::before,
+.link-current.link::before {
+  @apply scale-x-100;
+}

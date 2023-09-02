@@ -1,0 +1,11 @@
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hibernate">
+    <g clip-path="url(#a)">
+        <path d="M9.5 10.7v.2l3 5v.1l3.2-5.3-3.1-5.4-3 5.4ZM3.3 0l-3 5.3 3.2 5.4 3-5.4v-.2l-3-5h-.2Z" fill="#59666C" />
+        <path d="m3.3 0 3.1 5.3h6.2L9.5 0H3.3ZM3.5 10.7l3 5.3h6l-3-5.3h-6Z" fill="#BCAE79" />
+    </g>
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M0 0H16V16H0z" />
+        </clipPath>
+    </defs>
+</svg>

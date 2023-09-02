@@ -1,0 +1,6 @@
+<svg viewBox="0 0 21 17" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd"
+    stroke-linejoin="round" stroke-miterlimit="2" id="ya">
+    <path d="M5 16.9h4.3l1-2.3H16l1 2.3h4.4l-6-13H11L5 17v-.1ZM15 12h-3.6l1.8-4.6L15 12Z" fill="#273777"
+        transform="translate(-.6 -.9)" />
+    <path d="M14 .9H9.6L7.2 6 5 .9H.6l4.6 10L3.8 14h4.1L14 .9Z" fill="#f6bf44" transform="translate(-.6 -.9)" />
+</svg>
