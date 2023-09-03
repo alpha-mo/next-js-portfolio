@@ -12,7 +12,7 @@ const DocumentMode = ({ centered }: { centered?: boolean }) => {
   }, [mode]);
 
   return (
-    <button className={`text-content-200 ${centered && "m-auto"}`} onClick={handleClick}>
+    <button className={`text-content-200 ${centered && "m-auto"}`} onClick={handleClick} aria-label="dark / light mode button">
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height={22}>
         {mode === "dark" ? (
           <path

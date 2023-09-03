@@ -17,8 +17,10 @@ const MenuMobile = () => {
             isOpen ? "top-[140%]" : "top-[-800%]"
           } left-1/2 -translate-x-1/2 w-[70%] p-8 border border-divider-200 rounded-lg bg-base-100 z-50 transition-[top] duration-300 ease-in-out delay-150 flex flex-col gap-4`}
         >
-          <DocumentMode centered />
-          <div className="bg-divider-300 h-[2px] w-[80%] m-auto" />
+          <li>
+            <DocumentMode centered />
+          </li>
+          <li className="bg-divider-300 h-[2px] w-[80%] m-auto" />
           {navRoutes.map((appRoute) => {
             if (appRoute.url === "/") return;
             return (
