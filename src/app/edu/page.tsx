@@ -2,6 +2,13 @@ import Education from "@/components/education/Education";
 import Heading from "@/components/education/Heading";
 import Issuing from "@/components/education/Issu";
 import Topics from "@/components/education/Topics";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Education",
+  description: "Max's diploma",
+  keywords: ["Max Ojail", "fullstack developer", "java developer", "education"],
+};
 
 const EducationPage = () => {
   return (
