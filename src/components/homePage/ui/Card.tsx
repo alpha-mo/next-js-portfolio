@@ -8,7 +8,7 @@ const DescCard = ({ content }: { content: CardContent }) => {
       <p className="text-secondary font-semibold">{content.title}</p>
       <p className="text-content-100">{content.body}</p>
       <Link href={content.url} className="flex">
-        <p className="text-link w-fit origin-bottom-left hover:scale-110">read more</p>
+        <p className="text-link w-fit origin-bottom-left hover:scale-110">go to {content.title}</p>
       </Link>
     </article>
   );

@@ -5,7 +5,11 @@ const HomeButtons = () => {
   return (
     <ul className="flex gap-4 border border-divider-200 rounded-md w-fit px-5 py-3">
       {socialLinks.map((link) => {
-        return <SvgLink type={link.type} key={link.type} />;
+        return (
+          <li key={link.type}>
+            <SvgLink type={link.type} />
+          </li>
+        );
       })}
     </ul>
   );

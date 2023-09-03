@@ -8,7 +8,7 @@ const Burger = () => {
   }
 
   return (
-    <button onClick={handleClick}>
+    <button onClick={handleClick} aria-label="mobile menu button" title="mobile menu button">
       <svg viewBox="0 0 32 32" strokeLinecap="round" height={24} strokeWidth="2">
         {!isOpen ? (
           <>

@@ -7,7 +7,10 @@ import Navbar from "@/components/nav/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Max Ojail",
+  title: {
+    default: "Max Ojail",
+    template: "%s | Max Ojail",
+  },
   description: "Portfolio for potential jobbs",
   keywords: ["Max Ojail", "fullstack developer", "java developer"],
 };
